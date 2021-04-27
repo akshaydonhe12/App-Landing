@@ -7,8 +7,73 @@ Fonts
 /*-------
 Global css
 -------*/
+:root{
+    --main-color:#7857fe;
+    --color-1:#e91e63;
+    --color-2:#f5ae10;
+    --color-3:#09d69c;
+    --bg-dark:#2b2c2f;
+    --main-to-dark-color:var(--main-color);
+    --dark-to-main-color:var(--bg-dark);
+    --shadow-black-100:0 5px 15px rgba(0,0,0,0.1);
+    --shadow-black-300:0 5px 15px rgba(0,0,0,0.3);
+    --black-900:#000000;
+    --black-400:#555555;
+    --black-100:#f7f7f7;
+    --black-000:#fff;
+    --black-alpha-100:rgba(0,0,0,0.05);
+}
 
+body {
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    background-color: #fff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none imp !important;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul{
+    list-style: none;
+}
 
 /*-------
 Navbar css
 -------*/
+.navbar{
+    background-color: var(--main-color);
+    padding: 20px 0;
+}
+
+.navbar > .container{
+    padding: 15px 0;
+}
+
+.navbar .navbar-brand{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.navbar .nav-item {
+    margin-left: 40px;
+}
+.navbar .nav-item .nav-link {
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding: 5px 0;
+}
