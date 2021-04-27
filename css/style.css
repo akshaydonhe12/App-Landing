@@ -30,6 +30,7 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     background-color: #fff;
+    line-height: 1.5;
 
 }
 
@@ -46,6 +47,30 @@ img{
 
 ul{
     list-style: none;
+}
+
+
+.btn-1{
+    background-color:#fff;
+    padding: 12px 30px;
+    border:none;
+    border-radius: 30px;
+    color: var(--main-color) !important;
+    font-size: 16px !important;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    box-shadow: var(--shadow-black-300);
+    font-weight: 500 !important;
+}
+
+.btn-1:focus{
+    box-shadow: var(--shadow-black-300);
+
+}
+
+.btn-1:hover{
+    color: #fff !important;
+    background-color: var(--main-color);
 }
 
 /*-------
@@ -102,6 +127,25 @@ Home Section css
     min-height: 100vh;
     padding: 150px 0;
     background-color: var(--main-to-dark-color);
+}
+
+.home-text h1{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: #fff;
+}
+
+.home-text p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 300;
+
+}
+
+.home .home-btn{
+    margin: 40px 0;
 }
 
 .home-img img{
