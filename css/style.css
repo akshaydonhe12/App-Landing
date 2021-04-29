@@ -126,6 +126,24 @@ ul{
     color: var(--main-color);
 }
 
+.owl-carousel .owl-dots{
+    padding: 0 15px;
+    text-align: center;
+    margin-top:20px ;
+}
+
+.owl-carousel button.owl-dot{
+    height: 8px;
+    width: 24px;
+    background-color: #dddddd;
+    display: inline-block;
+    margin: 0 4px;
+    border-radius: 30%;
+}
+
+.owl-carousel button.owl-dot.active{
+    background-color: var(--main-color);
+}
 
 /*-------
 Navbar css
