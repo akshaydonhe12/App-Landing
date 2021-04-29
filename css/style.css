@@ -8,10 +8,10 @@ Fonts
 Global css
 -------*/
 :root{
-    --main-color:#7857fe;
+    --main-color:#6673b1;
     --color-1:#e91e63;
     --color-2:#f5ae10;
-    --color-3:#09d69c;
+    --color-3:#80a155;
     --bg-dark:#2b2c2f;
     --main-to-dark-color:var(--main-color);
     --dark-to-main-color:var(--bg-dark);
@@ -207,7 +207,7 @@ Home Section css
     min-height: 100vh;
     padding: 150px 0;
     background-color: var(--main-to-dark-color);
-    border-radius: 0 0 200px 0;
+    border-radius: 0 0 0 200px;
 }
 
 .home-text h1{
@@ -496,7 +496,7 @@ Fun Facts css
 }
 
 .fun-fact-item span{
-    font-size: 16px;
+    font-size: 14px;
     font-weight:400;
     text-transform: uppercase;
     margin: 0;
