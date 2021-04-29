@@ -328,6 +328,45 @@ Features css
     padding: 30px;
     border-radius: 10px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.features .feature-item::before,
+.features .feature-item::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.features .feature-item:hover::before{
+    left: 10px;
+    opacity: 1;
+}
+
+.features .feature-item:hover::after{
+    right: -15px;
+    opacity: 1;
+}
+
+.features .feature-item::before{
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-1);
+    left: -20px;
+    top: 40%;
+}
+
+.features .feature-item::after{
+    height: 30px;
+    width: 30px;
+    background-color: var(--color-2);
+    right: -30px;
+    top: 80%;
 }
 
 .features .feature-item .icon{
@@ -387,4 +426,5 @@ Features css
     margin: 0;
     color: var(--black-400);
     font-weight:3500;
+    margin: 0 0 15px;
 }
