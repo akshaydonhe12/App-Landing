@@ -523,3 +523,12 @@ App Screenshot css
     display: block;
     margin: auto;
 }
+
+
+/*-------
+App Download css
+-------*/
+
+.app-download{
+    background-image: url('../img/download-app-bg.jpg');
+}
