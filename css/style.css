@@ -489,15 +489,15 @@ Fun Facts css
 }
 
 .fun-fact-item h3{
-    font-size: 35px;
+    font-size: 22px;
     font-weight: 600;
     color: #ffffff;
     margin: 0 0 5px;
 }
 
 .fun-fact-item span{
-    font-size: 14px;
-    font-weight:400;
+    font-size: 16px;
+    font-weight:300;
     text-transform: uppercase;
     margin: 0;
     line-height: 26px;
