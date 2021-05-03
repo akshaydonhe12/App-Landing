@@ -718,8 +718,8 @@ testimonial css
 }
 
 .testimonial-item h3{
-    font-size: 22px;
-    margin: 0 0 0 5px;
+    font-size: 18px;
+    margin: 10px 0 5px;
     color: var(--black-900);
     text-transform: capitalize;
     font-weight: 500;
@@ -742,3 +742,12 @@ testimonial css
     display: inline-block;
     color: var(--color-2);
 }
+
+
+/*-------
+Team css
+-------*/
+
+
+
+.team-carosual
