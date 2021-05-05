@@ -14,6 +14,7 @@ $(document).ready(function(){
         }
     });
 
+
     /*-----------Video Popup ------------- */
     const videoSrc = $("#player-1").attr("src");
     $(".video-play-btn, .video-popup").on("click",function(){
@@ -28,6 +29,7 @@ $(document).ready(function(){
         }
        }
     });
+
 
     /*-----------Owl-carousel ------------- */
 
