@@ -852,3 +852,11 @@ Faq css
   }
 
 
+
+/*-------
+contact css
+-------*/
+
+.contact{
+    background-color: var(--black-100);
+}
