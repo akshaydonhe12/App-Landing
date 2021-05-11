@@ -230,7 +230,13 @@ Home Section css
     min-height: 100vh;
     padding: 150px 0;
     background-color: var(--main-to-dark-color);
-    border-radius: 0 0 0 200px;
+    border-radius: 0 0 0 200px; 
+}
+
+ #particles-js{
+    height: 100%;
+    background-color: var(--main-to-dark-color);
+    z-index: 1;
 }
 
 .home-text h1{
@@ -860,3 +866,34 @@ contact css
 .contact{
     background-color: var(--black-100);
 }
+
+.contact-info h3{
+    font-size: 22px;
+    color: var(--black-900);
+    font-weight: 500;
+    margin: 0 0 40px;
+}
+
+.contact-info-item{
+    position: relative;
+    padding-left: 55px;
+}
+
+.contact-info-item i{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    text-align: center;
+    line-height: 38px;
+}
+
+.contact-info-item h4{}
+
+.contact-info-item p{}
+
