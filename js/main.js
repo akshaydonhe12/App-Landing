@@ -133,4 +133,10 @@ $(document).ready(function(){
     $.scrollIt({
         topOffset: -50   
     });
+
+
+    /*-----------Navbar collap s ------------- */
+    $(".nav-link").on("click",function(){
+        $(".navbar-collapse").collapse("hide");
+    });
 });
