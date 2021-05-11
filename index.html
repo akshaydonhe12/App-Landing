@@ -34,19 +34,19 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link active" data-scroll-nav="0" href="#">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link " href="#">features</a>
+            <a class="nav-link" data-scroll-nav="1" href="#">features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Screenshots</a>
+            <a class="nav-link" data-scroll-nav="2" href="#">Screenshots</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">testimonial</a>
+            <a class="nav-link" data-scroll-nav="4" href="#">testimonial</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" data-scroll-nav="5" href="#">Contact</a>
           </li>
       </ul>
     </div>
@@ -58,7 +58,7 @@
 
 <!-- Home Section Start-->
 
-<section class="home d-flex align-items-center">
+<section class="home d-flex align-items-center" id="home" data-scroll-index="0">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-7 ">
@@ -67,8 +67,8 @@
           <p>With the high percentage of vechicle ownership in the india.parking has become a conflicting situation for serveral peoples, our mission is to solve parking problems!
             </p>
             <div class="home-btn">
-              <a href="#" class="btn btn-1">Download App</a>
-              <button type="button" class="btn btn-1 video-play-btn">
+              <a href="#" data-scroll-goto="3" class="btn btn-1">Download App</a>
+              <button type="button"  class="btn btn-1 video-play-btn">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -90,7 +90,7 @@
 
 
 <!-- Feature Section Start-->
-<section class="features section-padding">
+<section class="features section-padding" id="features" data-scroll-index="1">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -140,7 +140,7 @@
 
 
 <!-- Future Ideas Start-->
-<section class="fun-facts section-padding">
+<section class="fun-facts section-padding" >
   <div class="container">
     <div class="row">
 
@@ -204,7 +204,7 @@
 
 
 <!-- App Screenshot Start-->
-<section class="app-screenshot section-padding">
+<section class="app-screenshot section-padding" id="screenshots" data-scroll-index="2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -241,7 +241,7 @@
 
 
 <!-- App Download Start-->
-<section class="app-download section-padding">
+<section class="app-download section-padding" data-scroll-index="3" >
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -285,7 +285,7 @@
 
 
 <!-- How it Works Start-->
-<section class="how-it-works section-padding">
+<section class="how-it-works section-padding" >
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -335,7 +335,7 @@
 
 
 <!-- Testimonial start-->
-<section class="testimonial section-padding">
+<section class="testimonial section-padding" id="testimonial" data-scroll-index="4">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -571,7 +571,7 @@
 
 <!-- Contact us Start ---->
 
-<section class="contact section-padding">
+<section class="contact section-padding" data-scroll-index="5">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -697,10 +697,10 @@
         <div class="footer-col">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">ScreenShots</a></li>
-            <li><a href="#">Testimonial</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#screenshots">ScreenShots</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
           </ul>
         </div>
       </div>
@@ -765,10 +765,8 @@
 <script src="js/bootstrap.min.js"></script>
 <!-- Owl-carousel js -->
 <script src="js/owl.carousel.min.js"></script>
-<!-- particles js -->
-<script src="js/particles.js"></script>
-<!-- particles app js -->
-<script src="js/app.js"></script>
+<!-- scrollIt js -->
+<script src="js/scrollIt.min.js"></script>
 <!-- Main js -->
 <script src="js/main.js"></script>
 </body>

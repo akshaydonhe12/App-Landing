@@ -128,4 +128,9 @@ $(document).ready(function(){
         }
     });
 
+    /*-----------ScrollIt-js ------------- */
+
+    $.scrollIt({
+        topOffset: -50   
+    });
 });
