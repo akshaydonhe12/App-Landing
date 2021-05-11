@@ -877,6 +877,7 @@ contact css
 .contact-info-item{
     position: relative;
     padding-left: 55px;
+    margin-bottom: 30px;
 }
 
 .contact-info-item i{
@@ -893,7 +894,42 @@ contact css
     line-height: 38px;
 }
 
-.contact-info-item h4{}
+.contact-info-item h4{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    color: var(--black-900);
 
-.contact-info-item p{}
+}
 
+.contact-info-item p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 26px;
+    color: var(--black-400);
+}
+
+.contact-form .form-group{
+    margin-bottom: 25px;
+}
+
+.contact-form .form-control {
+    height: 52px;
+    border: 1px solid transparent;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 30px;
+    padding: 0 24px;
+    color: var(--black-900);
+    background-color: var(--black-000);
+    transition: all 0.5s ease;
+}
+
+.contact-form textarea.form-control{
+    height: 140px;
+    padding-top:12px;
+}
+
+.contact-form .form-control:focus{
+    border-color: var(--main-color);
+}
