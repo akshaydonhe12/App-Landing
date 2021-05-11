@@ -1025,4 +1025,76 @@ Responsive
     .navbar.navbar-shrink .navbar-nav{
         background-color: var(--main-color);
     }
+
+    .home-img .circle{
+        height: 320px;
+        width: 320px;
+    }
+
+    .home-img .circle::before{
+        left:18px;
+        top: 18px;
+        transform-origin: 142px 142px;
+    }
+
+    .home-text h1{
+        font-size:40px;
+    }
+
+    .how-it-works-item,
+    .app-download-item{
+        margin-bottom: 30px;
+    }
+
+    .how-it-works-item.line-right::before{
+        content: none;
+    }
+
+    .how-it-works-item{
+        box-shadow: var(--shadow-black-100);
+        border-radius: 10px;
+    }
+
+    .footer-col{
+        margin-bottom: 30px;
+    }
+
+   
 }
+
+@media(max-width:767px){
+
+   .home-text h1{
+        margin-bottom: 40px;
+    }
+
+    .fun-facts-img{
+        margin-bottom: 30px;
+    }
+
+    .contact-form{
+        margin-top: 20px;
+    }
+
+    .section-title h2{
+        font-size: 35px;
+    }
+   
+}
+
+
+@media(max-width:575px){
+
+    .home-text h1{
+        font-size:30px;
+     }
+
+     .home-text p{
+        font-size:16px;
+     }
+ 
+     .section-title h2{
+        font-size: 30px;
+    }
+ 
+ }
