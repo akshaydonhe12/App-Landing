@@ -139,4 +139,49 @@ $(document).ready(function(){
     $(".nav-link").on("click",function(){
         $(".navbar-collapse").collapse("hide");
     });
+
+
+
+    /*-----------Toggle Theme s ------------- */
+    function toggleTheme(){
+        if(localStorage.getItem("drive2park") !== null){
+            if(localStorage.getItem("drivr2park") === "dark"){
+                $("body").addClass("dark");
+            }
+            else{
+                $("body").removeClass("dark");
+
+            }
+        }
+        updateIcon();
+    }
+    toggleTheme();
+
+    $(".toggle-theme").on("click",function(){
+        $("body").toggleClass("dark");
+        if($("body").hasclass("dark")){
+            localStorage.setItem("drive2park", "dark");
+        }
+        else{
+            localStorage.setItem("drive2park", "light");
+            
+        }
+        updateIcon();
+
+    })
+
+
+
+    function updateIcon(){
+        if($("body").hasClass("dark")){
+            $(".toogle-theme i").removeClass("fa-moon");
+            $(".toggle-theme i").addClass("fa-sun");
+        }
+        else{
+            $(".toogle-theme i").removeClass("fa-sun");
+            $(".toggle-theme i").addClass("fa-moon");
+        }
+    }
+
+
 });

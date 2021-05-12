@@ -34,6 +34,18 @@ body {
 
 }
 
+body.dark{
+    background-color: var(--bg-dark);
+    --black-100:var(--bg-dark);
+    --black-000:var(--bg-dark);
+    --main-to-dark-color:var(--bg-dark);
+    --dark-to-main-color:var(--main-color);
+    --shadow-black-100:var(--shadow-black-300);
+    --black-alpha-100:rgba(255,255,255,0.05);
+    --black-900:#fff;
+    --black-400:#bbbbbb;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -997,6 +1009,35 @@ contact css
 
 
 /*----------------
+Toggle css
+-----------------*/
+
+.toggle-theme{
+    position: fixed;
+    right: 0;
+    top: calc(80% - 30px);
+    height: 50px;
+    width: 50px;
+    background-color: var(--dark-to-main-color);
+    z-index: 1200;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: var(--shadow-black-300);
+}
+
+.toggle-theme i {
+    line-height: 50px;
+
+}
+
+
+
+
+
+/*----------------
 Responsive
 -----------------*/
 
@@ -1080,6 +1121,9 @@ Responsive
         font-size: 35px;
     }
    
+    .fun-facts .section-title h2{
+        text-align: center;
+    }
 }
 
 
