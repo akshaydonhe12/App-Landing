@@ -1,6 +1,11 @@
 
 
 
+$(window).on("load", function(){
+    $(".preloader").fadeOut("slow");
+});
+
+
 $(document).ready(function(){
     
     /*-----------Navbar ------------- */
